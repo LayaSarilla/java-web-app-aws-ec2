@@ -1,2 +1,1 @@
-0000000000000000000000000000000000000000 0210136523c9b84bcc18e9af571771209de049ed Laya Sarilla <layasarilla@gmail.com> 1784436589 +0000	commit (initial): Initial commit: Employee REST API (Spring Boot + MySQL) for AWS EC2 deployment
-0210136523c9b84bcc18e9af571771209de049ed 0210136523c9b84bcc18e9af571771209de049ed Laya Sarilla <layasarilla@gmail.com> 1784436589 +0000	Branch: renamed refs/heads/master to refs/heads/main
+0210136523c9b84bcc18e9af571771209de049ed
