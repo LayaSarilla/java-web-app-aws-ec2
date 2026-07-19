@@ -1,0 +1,64 @@
+{
+  "info": {
+    "name": "Employee Web App - REST API",
+    "description": "CRUD endpoints for the Employee REST API deployed on AWS EC2",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8080" }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/health"
+      }
+    },
+    {
+      "name": "Create Employee",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Laya Sarilla\",\n  \"email\": \"laya@example.com\",\n  \"department\": \"Engineering\",\n  \"salary\": 65000\n}"
+        },
+        "url": "{{baseUrl}}/api/employees"
+      }
+    },
+    {
+      "name": "Get All Employees",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/employees"
+      }
+    },
+    {
+      "name": "Get Employee By Id",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/employees/1"
+      }
+    },
+    {
+      "name": "Update Employee",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Laya S.\",\n  \"email\": \"laya@example.com\",\n  \"department\": \"Backend Engineering\",\n  \"salary\": 72000\n}"
+        },
+        "url": "{{baseUrl}}/api/employees/1"
+      }
+    },
+    {
+      "name": "Delete Employee",
+      "request": {
+        "method": "DELETE",
+        "url": "{{baseUrl}}/api/employees/1"
+      }
+    }
+  ]
+}
